@@ -35,6 +35,10 @@
 # define mbsrtowcs __mbsrtowcs
 #endif
 
+#if defined(va_arg)
+#undef va_arg
+#endif
+
 #if HAVE_VPRINTF || HAVE_DOPRNT || _LIBC
 # if __STDC__
 #  include <stdarg.h>

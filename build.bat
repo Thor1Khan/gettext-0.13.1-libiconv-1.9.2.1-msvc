@@ -1,3 +1,4 @@
+if not exist %~dp0gettext mkdir %~dp0gettext
 pushd libiconv-1.9.2-src
 nmake -f Makefile.msvc NO_NLS=1 MFLAGS=-MD
 nmake -f Makefile.msvc NO_NLS=1 MFLAGS=-MD install PREFIX=%~dp0gettext
